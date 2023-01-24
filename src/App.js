@@ -2,8 +2,11 @@ import "./App.css";
 
 import FieldParagraph from "./components/FieldParagraph";
 import FieldInput from "./components/FieldInput";
+import FieldSelect from "./components/FieldSelect";
 
 function App() {
+	const arrTip = [5, 10, 15, 20, 25];
+	const arrTax = [5, 8, 23];
 	return (
 		<div className='App'>
 			<h1>Bill calculator!</h1>
@@ -15,17 +18,11 @@ function App() {
 				</div>
 				<div>
 					<FieldParagraph textParagraph='Tip' />
-					<input type='number' placeholder='Set tip...'></input>
+					<FieldSelect valueArr={arrTip} />
 				</div>
 				<div>
 					<FieldParagraph textParagraph='Tax' />
-					<select>
-						<option value='5'>5%</option>
-						<option value='8'>8%</option>
-						<option selected value='23%'>
-							23%
-						</option>
-					</select>
+					<FieldSelect valueArr={arrTax} />
 				</div>
 				<div>
 					<button>Calculate</button>
