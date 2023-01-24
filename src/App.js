@@ -1,17 +1,17 @@
 import "./App.css";
 
 import FieldParagraph from "./components/FieldParagraph";
+import FieldInput from "./components/FieldInput";
 
 function App() {
 	return (
 		<div className='App'>
 			<h1>Bill calculator!</h1>
 			<FieldParagraph textParagraph='Calculate your bill!' />
-
 			<form>
 				<div>
 					<FieldParagraph textParagraph='Price' />
-					<input type='number' placeholder='Set price...'></input>
+					<FieldInput inputType='number' placeholderInfo='Set price...' />
 				</div>
 				<div>
 					<FieldParagraph textParagraph='Tip' />
