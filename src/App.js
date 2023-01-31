@@ -10,7 +10,12 @@ function App() {
 	return (
 		<div className='App'>
 			<h1>Bill calculator!</h1>
-			<FieldParagraph textParagraph='Calculate your bill!' />
+			<FieldInput
+				inputType='number'
+				placeholderInfo='Set price...'
+				defaultValue='666'
+			/>
+			{/* <FieldParagraph textParagraph='Calculate your bill!' />
 			<form>
 				<div>
 					<FieldParagraph textParagraph='Price' />
@@ -27,7 +32,7 @@ function App() {
 				<div>
 					<button>Calculate</button>
 				</div>
-			</form>
+			</form> */}
 		</div>
 	);
 }
