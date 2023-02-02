@@ -1,0 +1,19 @@
+.inputNumerical {
+	padding: 4px;
+	width: 100%;
+	height: 26px;
+	color: black;
+}
+
+.inputSelect {
+	width: 100%;
+	padding: 4px;
+	height: 26px;
+	color: black;
+}
+
+.Paragraph {
+	padding-bottom: 5px;
+	text-align: left;
+	color: #f5cb5c;
+}

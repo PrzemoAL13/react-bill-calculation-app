@@ -10,6 +10,7 @@ const FieldSelect = props => {
 	};
 	return (
 		<select
+			className='inputSelect'
 			defaultValue={valueArr[localDefaultValue]}
 			onChange={handleSelectChange}>
 			{valueArr.map(elem => {
